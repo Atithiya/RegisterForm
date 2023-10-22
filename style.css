@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&display=swap');
+*{
+    box-sizing: border-box; 
+    font-family: 'Gabarito', sans-serif;
+}
+body{
+    background-image: url('https://cdn.pixabay.com/photo/2016/09/08/12/00/stars-1654074_1280.jpg');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+.form{
+    padding: 30px;
+    color: aliceblue;
+}
+h2{
+    text-align: center;
+    margin: 0 0 20px;
+}
+.form-control{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+.form-control label{
+    color: #dfdfdf;
+    display: block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid #777;
+    border-radius: 4px;
+    display: block;
+    width: 400px;
+    padding: 10px;
+    font-size: 14px;
+    
+}
+.form-control input:focus{
+    outline: 0;  
+    border-color: rgb(131, 133, 252); 
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control.success input{
+    border-color: green;
+
+}
+.form-control.error small{
+    visibility: hidden;
+}
+.form button{
+    border-radius: 20px;
+    border: 0px;
+    background: linear-gradient(45deg,#f45bff,#5f66f3);
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+}
+.form button:hover{
+    color: black;
+}
+.form-control small{
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
